@@ -1,0 +1,131 @@
+.content {
+  margin: 0.4rem 0px 0px 0px;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+  background: var(--bg-navigation);
+  color: var(--text-color);
+  border: 1.5px solid var(--black);
+
+  white-space: nowrap;
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+
+  .citySelect {
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 0 0.5rem;
+    display: flex;
+    align-items: center;
+
+    .cityIcon {
+      margin-right: 0.4rem;
+    }
+
+    &:hover {
+      color: var(--text-color-black);
+      background: var(--white);
+      border-radius: 0.5rem;
+      transition: all 0.1s ease-in;
+    }
+  }
+
+  .form {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    position: relative;
+    flex-basis: 600px;
+
+    .formInput {
+      width: 100%;
+      height: 2rem;
+      padding: 0 0.4rem;
+
+      color: var(--text-color);
+      background: var(--white);
+      border-radius: 0.5rem;
+      outline: none;
+
+      &:focus {
+        background: var(--white);
+        color: var(--text-color-black);
+      }
+    }
+
+    .formSearchButton {
+      width: 24px;
+      height: 24px;
+    }
+
+    .formCloseButton {
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      right: 2rem;
+    }
+  }
+
+  .genderSelect {
+    color: var(--text-color);
+    padding: 0 0.5rem;
+
+    display: flex;
+    align-items: center;
+    flex-basis: 160px;
+
+    cursor: pointer;
+
+    .listIcon {
+      margin-right: 0.5rem;
+    }
+
+    &:hover {
+      background: var(--white);
+      color: var(--text-color-black);
+      border-radius: 0.5rem;
+      transition: all 0.1s ease-in;
+
+      .listIcon {
+        fill: var(--black);
+      }
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  .content {
+  .genderSelect {
+  }
+  }
+}
+
+@media (max-width: 760px) {
+  .content {
+    .citySelect {
+      .cityIcon {
+        margin: 0;
+      }
+      span:last-child {
+        display: none;
+      }
+    }
+
+    .genderSelect {
+      .listIcon {
+        margin: 0;
+      }
+      span:last-child {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .content {
+    gap: 0.5rem;
+  }
+}
