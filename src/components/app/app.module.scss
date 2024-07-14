@@ -1,16 +1,13 @@
-.content {
-  width: 80%;
-  margin: auto;
+.main {
+  max-width: 1300px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 @media (max-width: 760px) {
-  .content {
-    width: 90%;
-  }
-}
-
-@media (max-width: 400px) {
-  .content {
-    width: 100%;
+  .main {
+    flex-direction: column;
   }
 }

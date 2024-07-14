@@ -13,11 +13,7 @@ const Header: React.FC = () => {
 
       <div className={styles.profile}>
         <a href='#'>
-          <img
-            className={styles.favoriteIcon}
-            src={icon.favorite}
-            alt='иконка избранное'
-          />
+          <img className={styles.favoriteIcon} src={icon.favorite} alt='иконка избранное' />
         </a>
         <a href='#'>
           <img
