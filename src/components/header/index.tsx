@@ -10,7 +10,6 @@ const Header: React.FC = () => {
         <img className={styles.logoIcon} src={icon.logo} alt='логотип' />
         <h1 className={styles.logoTitle}>Replicant</h1>
       </div>
-
       <div className={styles.profile}>
         <a href='#'>
           <img className={styles.favoriteIcon} src={icon.favorite} alt='иконка избранное' />
